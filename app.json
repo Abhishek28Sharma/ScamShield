@@ -1,7 +1,31 @@
 {
   "expo": {
-    "name": "scam-shield-app",
-    "slug": "scam-shield-app",
-    "version": "1.0.0"
+    "scheme": "yourapp",
+    "android": {
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "yourapp",
+              "host": "resetpassword"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.yourapp",
+      "scheme": "yourapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f605b2b6-5cba-4c70-bfaa-7a019a1334f5"
+      }
+    }
   }
 }
